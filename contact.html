@@ -61,6 +61,42 @@
   <input type="hidden" name="_next" value="https://yacinesidibe.github.io/portfolio/thanks.html">
   <input type="text" name="_gotcha" style="display:none">
 
+<fieldset id="genderGroup" class="form-field">
+  <legend>Genre</legend>
+  <label><input type="radio" name="gender" value="Homme" required> Homme</label>
+  <label><input type="radio" name="gender" value="Femme"> Femme</label>
+  <label><input type="radio" name="gender" value="Préférer ne pas dire"> Préférer ne pas dire</label>
+  <small class="error" aria-live="polite"></small>
+</fieldset>
+
+<div class="form-field">
+  <label for="age">Tranche d’âge</label>
+  <select id="age" name="age" required>
+    <option value="" selected disabled>Choisir…</option>
+    <option>Moins de 18</option>
+    <option>18–24</option>
+    <option>25–34</option>
+    <option>35–44</option>
+    <option>45–54</option>
+    <option>55+</option>
+  </select>
+  <small class="error" aria-live="polite"></small>
+</div>
+
+<div class="form-field">
+  <label for="nationality">Nationalité</label>
+  <input id="nationality" name="nationality" type="text" autocomplete="country" list="countries" required />
+  <small class="error" aria-live="polite"></small>
+
+  <datalist id="countries">
+    <option value="Guinée">
+    <option value="Sénégal">
+    <option value="Côte d’Ivoire">
+    <option value="Mali">
+    <option value="France">
+  </datalist>
+</div>
+
   <button type="submit" class="btn primary">Envoyer</button>
   <p id="formStatus" aria-live="polite"></p>
 </form>
