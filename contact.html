@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact · Portfolio Yacine</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta name="description" content="Portfolio personnel de Mamadou Yacine Sidibé, développeur web débutant et designer." />
+</head>
+<body>
+
+    <header class="site-header">
+      <div class="container">
+        <a class="logo" href="index.html">Yacine<span>.</span></a>
+        <button id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+        <nav id="mainNav" class="nav">
+          <ul>
+            <li><a href="index.html" >Accueil</a></li>
+            <li><a href="about.html" >À propos</a></li>
+            <li><a href="skills.html" >Compétences</a></li>
+            <li><a href="projects.html" >Projets</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+  <main class="container">
+
+<section class="section">
+  <h1>Contact</h1>
+  <p>Tu peux me joindre par email ou via le formulaire ci-dessous.</p>
+  <ul class="contacts">
+    <li><strong>Email :</strong> exemple@email.com</li>
+    <li><strong>Téléphone/WhatsApp :</strong> +221 78 680 19 80 / +224 623 58 67 84</li>
+  </ul>
+  <form id="contactForm" novalidate>
+    <div class="form-field">
+      <label for="name">Nom</label>
+      <input type="text" id="name" name="name" required />
+      <small class="error" aria-live="polite"></small>
+    </div>
+    <div class="form-field">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+      <small class="error" aria-live="polite"></small>
+    </div>
+    <div class="form-field">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <small class="error" aria-live="polite"></small>
+    </div>
+    <button type="submit" class="btn primary">Envoyer</button>
+    <p id="formStatus" role="status" aria-live="polite"></p>
+  </form>
+</section>
+
+  </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 Mamadou Yacine Sidibé · Portfolio débutant</p>
+      </div>
+    </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Placez ici vos images (ex: profile.jpg, projets).
